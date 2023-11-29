@@ -1,0 +1,248 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang2057{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9                                       \par
+                                            \par
+
+\pard\sa200\sl276\slmult1\qc\b\fs32 DAY4-TASKS\b0\fs22\par
+
+\pard\sa200\sl276\slmult1\par
+ \b 1. Print odd numbers in an array :\par
+\par
+\b0 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\par
+const printOddNumbersToArray = function(arr) \{\par
+    const oddNumbers = [];\par
+    for (let i = 0; i < arr.length; i++) \{\par
+      if (arr[i] % 2 !== 0) \{\par
+        oddNumbers.push(arr[i]);\par
+      \}\par
+    \}\par
+    return oddNumbers;\par
+  \};\par
+  const result = printOddNumbersToArray(numbers);\par
+  console.log(result);\par
+\par
+\b 2) Convert all the strings to title caps in a string array :\par
+\par
+\b0 const strings = ['hello', 'javascript', 'apple'];\par
+const convertToTitleCase = function(arr) \{\par
+    const titleCaseArray = [];\par
+    for (let i = 0; i < arr.length; i++) \{\par
+      const words = arr[i].split(' ');\par
+      for (let j = 0; j < words.length; j++) \{\par
+        words[j] = words[j].charAt(0).toUpperCase() + words[j].slice(1).toLowerCase();\par
+      \}\par
+      titleCaseArray.push(words.join(' '));\par
+    \}\par
+    return titleCaseArray;\par
+  \};\par
+  const result = convertToTitleCase(strings);\par
+  console.log(result);\par
+\par
+\b 3) Sum of all numbers in an array :\par
+\par
+\b0 const numbers = [1, 2, 3, 4, 5];\par
+const calculateSum = function(arr) \{\par
+    let sum = 0;\par
+  \par
+    for (let i = 0; i < arr.length; i++) \{\par
+      if (typeof arr[i] === 'number') \{\par
+        sum += arr[i];\par
+      \}\par
+    \}\par
+  \par
+    return \{ array: arr, sum: sum \};\par
+  \};\par
+  const result = calculateSum(numbers);\par
+  \par
+  console.log('Array:', result.array);\par
+  console.log('Sum:', result.sum);\par
+\par
+\b 4) Return all the prime numbers in an array :\par
+\b0 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\par
+const findPrimeNumbers = function(arr) \{\par
+    const isPrime = function(num) \{\par
+      if (num <= 1) \{\par
+        return false;\par
+      \}\par
+      for (let i = 2; i <= Math.sqrt(num); i++) \{\par
+        if (num % i === 0) \{\par
+          return false;\par
+        \}\par
+      \}\par
+      return true;\par
+    \};\par
+    const primeNumbers = [];\par
+    for (let i = 0; i < arr.length; i++) \{\par
+      if (isPrime(arr[i])) \{\par
+        primeNumbers.push(arr[i]);\par
+      \}\par
+    \}\par
+    return primeNumbers;\par
+  \};\par
+  const result = findPrimeNumbers(numbers);\par
+  console.log('Prime Numbers:', result);\par
+\par
+\b 5) Return all the palindromes in an array :\par
+\b0\par
+const words = ['level', 'hello', 'radar', 'world', 'madam'];\par
+const findPalindromes = function(arr) \{\par
+    const isPalindrome = function(str) \{\par
+      const reversedStr = str.split('').reverse().join('');\par
+      return str === reversedStr;\par
+    \};\par
+    const palindromeArray = [];\par
+    for (let i = 0; i < arr.length; i++) \{\par
+      if (isPalindrome(String(arr[i]))) \{\par
+        palindromeArray.push(arr[i]);\par
+      \}\par
+    \}\par
+    return palindromeArray;\par
+  \}; \par
+  const result = findPalindromes(words);\par
+  console.log('Original Array:', words);\par
+  console.log('Palindromes:', result);\par
+\par
+\b 6) Return median of two sorted arrays of the same size:\par
+\b0\par
+const array1 = [1, 2, 3];\par
+const array2 = [4, 5, 6];\par
+const findMedian = function(arr1, arr2) \{\par
+    const combinedArray = arr1.concat(arr2);\par
+    const sortedArray = combinedArray.sort((a, b) => a - b);\par
+    const length = sortedArray.length;\par
+    const middle = Math.floor(length / 2);\par
+    if (length % 2 === 0) \{\par
+      return (sortedArray[middle - 1] + sortedArray[middle]) / 2;\par
+    \} else \{\par
+      return sortedArray[middle];\par
+    \}\par
+  \};\par
+  const result = findMedian(array1, array2);\par
+  console.log('Array 1:', array1);\par
+  console.log('Array 2:', array2);\par
+  console.log('Median:', result);\par
+\par
+\b 7) Remove duplicates from an array :\b0\par
+\par
+const numbers = [1, 2, 2, 3, 4, 4, 5];\par
+const removeDuplicates = function(arr) \{\par
+    const uniqueArray = arr.filter((value, index, self) => \{\par
+      return self.indexOf(value) === index;\par
+    \});\par
+    return uniqueArray;\par
+  \};\par
+  const result = removeDuplicates(numbers); \par
+  console.log('Original Array:', numbers);\par
+  console.log('Array without Duplicates:', result);\par
+\par
+\b 8) Rotate an array by k times :\par
+\par
+\b0 const originalArray = [1, 2, 3, 4, 5];\par
+const rotateArray = function(arr, k) \{\par
+    const len = arr.length;\par
+    k = k % len; \par
+    const rotatedArray = arr.slice(len - k).concat(arr.slice(0, len - k));\par
+    return rotatedArray;\par
+  \};\par
+  const rotations = 2;\par
+  const result = rotateArray(originalArray, rotations);\par
+  console.log('Original Array:', originalArray);\par
+  console.log(`Array after $\{rotations\} rotations:`, result);\par
+\par
+\fs32 arrow function :\par
+\fs22\par
+ \b 1. Print odd numbers in an array :\par
+\par
+\b0 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\par
+const printOddNumbersToArray = arr => \{\par
+    const oddNumbers = [];\par
+    for (let i = 0; i < arr.length; i++) \{\par
+      if (arr[i] % 2 !== 0) \{\par
+        oddNumbers.push(arr[i]);\par
+      \}\par
+    \}\par
+    return oddNumbers;\par
+  \};\par
+    const result = printOddNumbersToArray(numbers);\par
+  console.log(result);\par
+\par
+\b 2) Convert all the strings to title caps in a string array :\par
+\par
+\b0 const strings = ['hello', 'javascript', 'apple'];\par
+const convertToTitleCase = arr => \{\par
+    const titleCaseArray = [];\par
+    for (let i = 0; i < arr.length; i++) \{\par
+      const words = arr[i].split(' ');\par
+      for (let j = 0; j < words.length; j++) \{\par
+        words[j] = words[j].charAt(0).toUpperCase() + words[j].slice(1).toLowerCase();\par
+      \}\par
+      titleCaseArray.push(words.join(' '));\par
+    \}\par
+    return titleCaseArray;\par
+  \};\par
+  const result = convertToTitleCase(strings);\par
+  console.log(result);\par
+\par
+\b 3) Sum of all numbers in an array :\par
+\b0\par
+const numbers = [1, 2, 3, 4, 5];\par
+const calculateSum = arr => \{\par
+    let sum = 0;\par
+    for (let i = 0; i < arr.length; i++) \{\par
+      if (typeof arr[i] === 'number') \{\par
+        sum += arr[i];\par
+      \}\par
+    \}\par
+    return \{ array: arr, sum: sum \};\par
+  \};\par
+  const result = calculateSum(numbers);\par
+  console.log('Array:', result.array);\par
+  console.log('Sum:', result.sum);\par
+\par
+\b 4) Return all the prime numbers in an array :\par
+\b0\par
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\par
+const findPrimeNumbers = arr => \{\par
+    const isPrime = function(num) \{\par
+      if (num <= 1) \{\par
+        return false;\par
+      \}\par
+      for (let i = 2; i <= Math.sqrt(num); i++) \{\par
+        if (num % i === 0) \{\par
+          return false;\par
+        \}\par
+      \}\par
+      return true;\par
+    \};\par
+    const primeNumbers = [];\par
+    for (let i = 0; i < arr.length; i++) \{\par
+      if (isPrime(arr[i])) \{\par
+        primeNumbers.push(arr[i]);\par
+      \}\par
+    \}\par
+    return primeNumbers;\par
+  \};\par
+  const result = findPrimeNumbers(numbers);\par
+  console.log('Prime Numbers:', result);\par
+\par
+\b 5) Return all the palindromes in an array :\par
+\b0\par
+const words = ['level', 'hello', 'radar', 'world', 'madam'];\par
+const findPalindromes = arr => \{\par
+    const isPalindrome = str => \{\par
+      const reversedStr = str.split('').reverse().join('');\par
+      return str === reversedStr;\par
+    \}; \par
+    const palindromeArray = [];\par
+    for (let i = 0; i < arr.length; i++) \{\par
+      if (isPalindrome(String(arr[i]))) \{\par
+        palindromeArray.push(arr[i]);\par
+      \}\par
+    \}\par
+    return palindromeArray;\par
+  \};\par
+    const result = findPalindromes(words); \par
+  console.log('Original Array:', words);\par
+  console.log('Palindromes:', result);\par
+}
+ 
