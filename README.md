@@ -30,4 +30,33 @@ This repository contains an HTML template and related assets for creating a cust
 
 - **Placeholder Text:** Replaceable placeholder text and elements for quick adaptation to specific requirements.
 
-    
+    __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __
+
+  
+Day1-Callback-task :
+
+# Callback Hell Method in JavaScript
+
+This project showcases an example of using the callback hell method in JavaScript to handle asynchronous operations.
+
+## Introduction
+
+In JavaScript, callback hell refers to the nesting of multiple callback functions within each other, often resulting in code that is difficult to read and maintain. While there are better alternatives like Promises and async/await, understanding callback hell is crucial for historical reasons and to appreciate modern asynchronous programming patterns.
+
+## Callback Hell
+
+The `script.js` file in this project demonstrates callback hell to create a countdown from 10 to 1 and then display "Happy Independence Day." The code follows the specified constraints, avoiding named functions, set interval functions, recursion, IIFEs, and looping.
+
+```javascript
+// snippet from script.js
+// ...
+
+countdown(10, function () {
+  console.log("Happy Independence Day");
+});
+
+// ...
+
+     __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __
+
+
