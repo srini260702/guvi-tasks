@@ -30,8 +30,8 @@ This repository contains an HTML template and related assets for creating a cust
 
 - **Placeholder Text:** Replaceable placeholder text and elements for quick adaptation to specific requirements.
 
-    __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __
 
+   
   
 Day1-Callback-task :
 
@@ -88,9 +88,8 @@ Feel free to customize this README file according to your project details.
 
 
 
-                              - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-
+                            
 Harry potter API :
 
 # Harry Potter API Details
@@ -131,8 +130,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 
-                    __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __
 
+                 
 
 Ice and Fire API :
 
@@ -165,7 +164,4 @@ This web app fetches and displays details of a character from the [An API of Ice
 
    ```bash
   
-
-
-                         __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __
 
