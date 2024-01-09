@@ -59,4 +59,119 @@ countdown(10, function () {
 
      __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __
 
+Cat API :
 
+# Cat API Viewer
+
+This project is a simple web application that fetches and displays cat images along with their details from the [Cat API](https://api.thecatapi.com/v1/images/search?limit=10). The UI is designed to be responsive and user-friendly.
+
+## How to Use
+
+1. Clone the repository to your local machine.
+2. Open the `index.html` file in a web browser.
+
+## Constraints
+
+- The UI is responsive and designed with a clean look and feel.
+- Promises are used to retrieve data from the Cat API.
+- Proper variable and function names are used.
+- The `catch` statement is implemented for error handling during the fetch operation.
+- No deprecated HTML tags are used.
+- Inline styles are avoided, and only class selectors are used for styling.
+- Proper opening and closing of HTML tags are maintained.
+- Function logic is documented with comments.
+- Code follows principles of code reusability.
+
+## Technologies Used
+
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+
+## Author
+
+[Your Name]
+
+Feel free to customize this README file according to your project details.
+
+
+
+
+                              - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+Harry potter API :
+
+# Harry Potter API Details
+
+This project fetches and displays details from the Harry Potter API.
+
+## Constraints
+
+- UI is responsive and adheres to the specified look and feel.
+- Promises are used to retrieve data and display necessary details on the webpage.
+- Code quality is maintained with proper variable and function names.
+- The fetch operation is wrapped with a catch block to handle errors.
+- No deprecated HTML tags are used.
+- Inline styles are avoided, and only class selectors are used.
+- Proper opening and closing of HTML tags are ensured.
+- Comments/description of the function logic are included for better understanding.
+- Code reusability is emphasized.
+
+## Technologies Used
+
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+
+## Usage
+
+1. Clone the repository.
+2. Open the `index.html` file in a web browser.
+
+## Contribution
+
+Feel free to contribute by opening issues or submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+
+                    __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __
+
+
+Ice and Fire API :
+
+# Character Details Web App
+
+This web app fetches and displays details of a character from the [An API of Ice And Fire](https://anapioficeandfire.com/) API.
+
+## Constraints
+
+- UI is responsive and adheres to a clean look and feel.
+- Promises are used to retrieve data and display necessary information on the webpage.
+- Code quality is maintained with proper variable and function names.
+- `catch` is used for error handling during fetch.
+- No deprecated HTML tags are used.
+- Inline styles are avoided.
+- Only class selectors are used for styling.
+- Proper opening and closing of HTML tags.
+- Function logic is documented with comments.
+- Code reusability is considered.
+
+## Technologies Used
+
+- HTML
+- CSS (Bootstrap)
+- JavaScript
+
+## Instructions
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/character-details-web-app.git
