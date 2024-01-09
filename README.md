@@ -47,17 +47,7 @@ In JavaScript, callback hell refers to the nesting of multiple callback function
 
 The `script.js` file in this project demonstrates callback hell to create a countdown from 10 to 1 and then display "Happy Independence Day." The code follows the specified constraints, avoiding named functions, set interval functions, recursion, IIFEs, and looping.
 
-```javascript
-// snippet from script.js
-// ...
 
-countdown(10, function () {
-  console.log("Happy Independence Day");
-});
-
-// ...
-
-     __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __
 
 Cat API :
 
@@ -174,4 +164,8 @@ This web app fetches and displays details of a character from the [An API of Ice
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/character-details-web-app.git
+  
+
+
+                         __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __
+
